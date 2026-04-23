@@ -6,6 +6,7 @@ import { Navbar } from "./navbar";
 import { Room } from "./room";
 import Toolbar from "./toolbar";
 import { api } from "@/convex/_generated/api";
+import { AiSidebar } from "./ai-sidebar";
 
 interface DocumentProps {
   preloadedDocument: Preloaded<typeof api.documents.getById>;
@@ -26,6 +27,9 @@ export const Document = ({ preloadedDocument }: DocumentProps) => {
           <Editor initialContent={document.intitalContent} />
         </div>
       </div>
+
+      {/* AI Sidebar */}
+      <AiSidebar />
     </Room>
   );
 };

@@ -1,63 +1,63 @@
-// // "use client";
+// "use client";
 
-// // import { ReactNode } from "react";
-// // import { ConvexReactClient } from "convex/react";
-// // import { ConvexProviderWithClerk } from "convex/react-clerk";
-// // import { ClerkProvider, useAuth } from "@clerk/nextjs";
+// import { ReactNode } from "react";
+// import { ConvexReactClient } from "convex/react";
+// import { ConvexProviderWithClerk } from "convex/react-clerk";
+// import { ClerkProvider, useAuth } from "@clerk/nextjs";
 
-// // const convex = new ConvexReactClient(
-// //   process.env.NEXT_PUBLIC_CONVEX_URL!
-// // );
+// const convex = new ConvexReactClient(
+//   process.env.NEXT_PUBLIC_CONVEX_URL!
+// );
 
-// // export function ConvexClientProvider({ children }: { children: ReactNode }) {
-// //   return (
-// //     <ClerkProvider>
-// //       <ConvexProviderWithClerk client={convex} useAuth={useAuth}>
-// //         {children}
-// //       </ConvexProviderWithClerk>
-// //     </ClerkProvider>
-// //   );
-// // }
+// export function ConvexClientProvider({ children }: { children: ReactNode }) {
+//   return (
+//     <ClerkProvider>
+//       <ConvexProviderWithClerk client={convex} useAuth={useAuth}>
+//         {children}
+//       </ConvexProviderWithClerk>
+//     </ClerkProvider>
+//   );
+// }
 
 
 
-// // "use client";
+// "use client";
 
-// // import { ReactNode } from "react";
-// // import {  ConvexReactClient,Authenticated,Unauthenticated,AuthLoading } from "convex/react";
-// // import {ConvexProviderWithClerk} from "convex/react-clerk";
-// // import {ClerkProvider,useAuth,SignIn} from "@clerk/nextjs"
+// import { ReactNode } from "react";
+// import {  ConvexReactClient,Authenticated,Unauthenticated,AuthLoading } from "convex/react";
+// import {ConvexProviderWithClerk} from "convex/react-clerk";
+// import {ClerkProvider,useAuth,SignIn} from "@clerk/nextjs"
 
-// // const convex = new ConvexReactClient(
-// //   process.env.NEXT_PUBLIC_CONVEX_URL!
-// // );
+// const convex = new ConvexReactClient(
+//   process.env.NEXT_PUBLIC_CONVEX_URL!
+// );
 
-// // // console.log(process.env.NEXT_PUBLIC_CONVEX_URL);
+// // console.log(process.env.NEXT_PUBLIC_CONVEX_URL);
 
-// // export function ConvexClientProvider({ children }: { children: ReactNode }) {
-// //   return (
-// //     <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
-// //         <ConvexProviderWithClerk 
-// //         useAuth={useAuth} 
-// //         client={convex}
-// //         >
-// //             <Authenticated>
-// //               {children}
-// //              </Authenticated>  
-// //              <Unauthenticated>
-// //                 <div className="flex flex-col items-center min-h-screen justify-center ">
-// //                     <SignIn/>
-// //                 </div>
-// //              </Unauthenticated>    
-// //              <AuthLoading>
-// //                 <p>Loading auth...</p>
-// //              </AuthLoading>   
+// export function ConvexClientProvider({ children }: { children: ReactNode }) {
+//   return (
+//     <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
+//         <ConvexProviderWithClerk 
+//         useAuth={useAuth} 
+//         client={convex}
+//         >
+//             <Authenticated>
+//               {children}
+//              </Authenticated>  
+//              <Unauthenticated>
+//                 <div className="flex flex-col items-center min-h-screen justify-center ">
+//                     <SignIn/>
+//                 </div>
+//              </Unauthenticated>    
+//              <AuthLoading>
+//                 <p>Loading auth...</p>
+//              </AuthLoading>   
 
-// //         </ConvexProviderWithClerk>
-// //     </ClerkProvider>
-// //   );
+//         </ConvexProviderWithClerk>
+//     </ClerkProvider>
+//   );
   
-// // }
+// }
 
 
 
@@ -74,60 +74,58 @@
 
 
 
-// // "use client";
+// "use client";
 
-// // import { ReactNode } from "react";
-// // import { ConvexReactClient } from "convex/react";
-// // import { ConvexProviderWithClerk } from "convex/react-clerk";
-// // import { ClerkProvider, useAuth } from "@clerk/nextjs";
+// import { ReactNode } from "react";
+// import { ConvexReactClient } from "convex/react";
+// import { ConvexProviderWithClerk } from "convex/react-clerk";
+// import { ClerkProvider, useAuth } from "@clerk/nextjs";
 
-// // const convex = new ConvexReactClient(
-// //   process.env.NEXT_PUBLIC_CONVEX_URL!
-// // );
+// const convex = new ConvexReactClient(
+//   process.env.NEXT_PUBLIC_CONVEX_URL!
+// );
 
-// // export function ConvexClientProvider({
-// //   children,
-// // }: {
-// //   children: ReactNode;
-// // }) {
-// //   return (
-// //     <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
-// //       <ConvexProviderWithClerk useAuth={useAuth} client={convex}>
-// //         {children}
-// //       </ConvexProviderWithClerk>
-// //     </ClerkProvider>
-// //   );
-// // }
-
-
+// export function ConvexClientProvider({
+//   children,
+// }: {
+//   children: ReactNode;
+// }) {
+//   return (
+//     <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
+//       <ConvexProviderWithClerk useAuth={useAuth} client={convex}>
+//         {children}
+//       </ConvexProviderWithClerk>
+//     </ClerkProvider>
+//   );
+// }
 
 
-// // "use client";
-
-// // import { ReactNode } from "react";
-// // import { ConvexReactClient } from "convex/react";
-// // import { ConvexProviderWithClerk } from "convex/react-clerk";
-// // import { ClerkProvider, useAuth } from "@clerk/nextjs";
-
-// // const convex = new ConvexReactClient(
-// //   process.env.NEXT_PUBLIC_CONVEX_URL!
-// // );
-
-// // export function ConvexClientProvider({
-// //   children,
-// // }: {
-// //   children: ReactNode;
-// // }) {
-// //   return (
-// //     <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
-// //       <ConvexProviderWithClerk useAuth={useAuth} client={convex}>
-// //         {children}
-// //       </ConvexProviderWithClerk>
-// //     </ClerkProvider>
-// //   );
-// // }
 
 
+// "use client";
+
+// import { ReactNode } from "react";
+// import { ConvexReactClient } from "convex/react";
+// import { ConvexProviderWithClerk } from "convex/react-clerk";
+// import { ClerkProvider, useAuth } from "@clerk/nextjs";
+
+// const convex = new ConvexReactClient(
+//   process.env.NEXT_PUBLIC_CONVEX_URL!
+// );
+
+// export function ConvexClientProvider({
+//   children,
+// }: {
+//   children: ReactNode;
+// }) {
+//   return (
+//     <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
+//       <ConvexProviderWithClerk useAuth={useAuth} client={convex}>
+//         {children}
+//       </ConvexProviderWithClerk>
+//     </ClerkProvider>
+//   );
+// }
 
 
 
@@ -156,6 +154,57 @@
 
 
 
+
+
+
+
+
+
+
+"use client";
+
+import { ReactNode } from "react";
+import {
+  ConvexReactClient,
+  Authenticated,
+  Unauthenticated,
+  AuthLoading,
+} from "convex/react";
+import { ConvexProviderWithClerk } from "convex/react-clerk";
+import { ClerkProvider, useAuth, SignIn } from "@clerk/nextjs";
+import { FullScreerLoader } from "./fullscreen--loader";
+
+const convex = new ConvexReactClient(
+  process.env.NEXT_PUBLIC_CONVEX_URL!
+);
+
+export function ConvexClientProvider({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return (
+    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
+      <ConvexProviderWithClerk useAuth={useAuth} client={convex}>
+        
+        <Authenticated>
+          {children}
+        </Authenticated>
+
+        <Unauthenticated>
+          <div className="flex flex-col items-center min-h-screen justify-center">
+            <SignIn routing="hash" />
+          </div>
+        </Unauthenticated>
+
+        <AuthLoading>
+          <FullScreerLoader label="Loading auth..." />
+        </AuthLoading>
+
+      </ConvexProviderWithClerk>
+    </ClerkProvider>
+  );
+}
 
 
 
@@ -193,7 +242,11 @@
 
 //         <Unauthenticated>
 //           <div className="flex flex-col items-center min-h-screen justify-center">
-//             <SignIn routing="hash" />
+//             <SignIn
+//               routing="path"
+//               signUpUrl="/sign-up"
+//               signInUrl="/sign-in"
+//             />
 //           </div>
 //         </Unauthenticated>
 
@@ -205,51 +258,3 @@
 //     </ClerkProvider>
 //   );
 // }
-
-
-
-
-"use client";
-
-import { ReactNode } from "react";
-import {
-  ConvexReactClient,
-  Authenticated,
-  Unauthenticated,
-  AuthLoading,
-} from "convex/react";
-import { ConvexProviderWithClerk } from "convex/react-clerk";
-import { ClerkProvider, useAuth, SignIn } from "@clerk/nextjs";
-import { FullScreerLoader } from "@/components/fullscreen--loader";
-
-const convex = new ConvexReactClient(
-  process.env.NEXT_PUBLIC_CONVEX_URL!
-);
-
-export function ConvexClientProvider({
-  children,
-}: {
-  children: ReactNode;
-}) {
-  return (
-    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
-      <ConvexProviderWithClerk useAuth={useAuth} client={convex}>
-        
-        <Authenticated>
-          {children}
-        </Authenticated>
-
-        <Unauthenticated>
-          <div className="flex flex-col items-center min-h-screen justify-center">
-            <SignIn routing="hash" />
-          </div>
-        </Unauthenticated>
-
-        <AuthLoading>
-          <FullScreerLoader label="Loading auth..." />
-        </AuthLoading>
-
-      </ConvexProviderWithClerk>
-    </ClerkProvider>
-  );
-}
