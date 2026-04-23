@@ -223,7 +223,7 @@ const Editor = ({initialContent}:EditorProps) => {
       liveBlocks,
       StarterKit.configure({
         history: false,
-      }),
+      } as Record<string, unknown>),
       LineHeightExtension.configure({
         types:["heading", "paragraph"],
         defaultLineHeight: "normal",
@@ -295,12 +295,6 @@ const Editor = ({initialContent}:EditorProps) => {
         },
       }),
     ],
-
-    content: `
-      
-    `,
-
-    immediatelyRender: false,
   });
 
   return (

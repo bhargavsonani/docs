@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { useEditorStore } from "@/store/use-editor-store";
+import { type Editor } from "@tiptap/react";
 import {
   SparklesIcon,
   CheckIcon,
@@ -30,7 +30,7 @@ type AiAction =
   | "bullet_points";
 
 interface AiToolbarProps {
-  editor: ReturnType<typeof useEditorStore>["editor"];
+  editor: Editor | null;
 }
 
 const TONES = [
